@@ -2,7 +2,9 @@ import os
 from dotenv import load_dotenv
 from simpleaichat import AsyncAIChat
 import asyncio
-from google_tools import google_search, google_custom_search
+from tools.google_tools import google_search, google_custom_search
+from tools.browserless_tool import scrape_website
+
 
 # Load .env file
 load_dotenv()
